@@ -1,58 +1,35 @@
 ---
 title: "Worklog Tuần 6"
-date: 2024-01-01
-weight: 1
+date: 2026-10-23
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 6:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tham gia giai đoạn khảo sát và viết proposal của dự án (tuần 1 của dự án) ở vai trò Frontend.
+* Chọn cách host frontend trên AWS và hiểu các yêu cầu đi kèm (HTTPS, cache, routing của SPA, URL API).
+* Kiểm tra frontend vẫn build và chạy test được sau khi đổi tên SEAL → FCAJ.
+* Hiểu luồng chấm điểm bằng AI để giao diện hiển thị đúng từng trạng thái job.
+* Chuẩn bị đầu vào cho phần frontend trong proposal (kiến trúc, chi phí).
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Dự án được đổi tên thành FCAJ Hackathon (cập nhật README) <br> - So sánh các phương án host frontend trên AWS: giữ container trên EC2 (hiện tại), S3 + CloudFront, AWS Amplify Hosting | 19/10/2026 | 19/10/2026 | [Rename commit](https://github.com/nhatnhm1405/fcaj-hackathon-system/commit/087fb7e9372c8d07b167772c764f96e4b0d51a11); [Amplify Hosting](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html); [Hosting a static website on S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html) |
+| 3 | - Tìm hiểu S3 + CloudFront cho single-page app: bucket private với Origin Access Control, custom error response trả về `index.html`, invalidation cache sau mỗi lần deploy <br> - Ghi chú `VITE_API_URL` phải được truyền trong bước build của CI vì giá trị này bị đóng gói lúc build | 20/10/2026 | 20/10/2026 | [Restrict access to an S3 origin (OAC)](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html); [Custom error responses](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/GeneratingCustomErrorResponses.html); [Invalidating files](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html) |
+| 4 | - PR #10 (`feature/technical-rename-fcaj`) được merge vào `main` <br> - Pull `main` mới nhất và kiểm tra frontend trên máy: `npm ci`, `npm run build`, `npm test` (Vitest) | 21/10/2026 | 21/10/2026 | [Merge commit PR #10](https://github.com/nhatnhm1405/fcaj-hackathon-system/commit/93c3cbab5b7e42cc4a19e2e7b6eeaf45913d91b4); [Vitest](https://vitest.dev/guide/) |
+| 5 | - Tìm hiểu luồng mục tiêu: Frontend → Backend → RDS/S3 → AI job → SQS → worker → kết quả → Backend → Frontend <br> - Liệt kê các trạng thái job giao diện cần hiển thị (chờ, đang xử lý, thành công, thất bại) và dữ liệu API frontend cần từ Backend 1 | 22/10/2026 | 22/10/2026 | [Amazon SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html); [Project repository](https://github.com/nhatnhm1405/fcaj-hackathon-system) |
+| 6 | - Chuẩn bị đầu vào chi phí cho frontend (dung lượng S3, số request và data transfer của CloudFront) cho phần ước tính trong proposal <br> - Tổng hợp đề xuất frontend: phương án hosting, các điểm CORS và cookie đăng nhập cần kiểm tra với backend | 23/10/2026 | 23/10/2026 | [AWS Pricing Calculator](https://calculator.aws/); [CloudFront pricing](https://aws.amazon.com/cloudfront/pricing/) |
 
 ### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Chọn S3 + CloudFront làm phương án host frontend và nắm các yêu cầu: bucket private với OAC, fallback `index.html` cho SPA, invalidation cache.
+* Hiểu URL API được đóng gói lúc build, nên pipeline CI phải build frontend với `VITE_API_URL` đúng cho từng môi trường.
+* Xác nhận frontend build và chạy test được sau khi PR #10 đổi tên được merge.
+* Hiểu luồng AI job qua SQS và liệt kê các trạng thái giao diện cùng dữ liệu API cần có.
+* Chuẩn bị đầu vào frontend cho proposal và ước tính chi phí, sẵn sàng cho task tuần 2 ở [Issue #12](https://github.com/nhatnhm1405/fcaj-hackathon-system/issues/12).
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+<!-- [CẦN XÁC NHẬN: kiểm tra thứ 4 (bạn có chạy build/test trên máy không?) và thêm link ghi chú hoặc phần proposal của bạn, rồi xóa dòng này.] -->
