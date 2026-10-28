@@ -13,6 +13,7 @@ pre: " <b> 1.2. </b> "
 * Build a VPC with public and private subnets in two Availability Zones and connect to EC2 instances in both.
 * Know the options for connecting networks: VPC Peering, Transit Gateway, Site-to-Site VPN, Direct Connect, and the role of Elastic Load Balancing.
 * Configure inbound and outbound Route 53 Resolver endpoints for a Hybrid DNS lab.
+* Attend the Buildrathon Kickoff event to learn about the Buildrathon program.
 
 ### Tasks to be carried out this week:
 
@@ -23,10 +24,12 @@ pre: " <b> 1.2. </b> "
 | 4 | - **Lab 03 (part 2):** create Security Groups, launch EC2 in the public and private subnets <br> - Added a NAT Gateway for outbound Internet from the private subnet <br> - Connected to the private instance through an EC2 Instance Connect Endpoint | 09/23/2026 | 09/23/2026 | [FCJ Lab03](https://000003.awsstudygroup.com/); [Security Groups](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html), [Network ACLs](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html); [EC2 Instance Connect Endpoint](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-with-ec2-instance-connect-endpoint.html) |
 | 5 | - **Lab 10 (part 1):** deploy the network and RDGW with CloudFormation <br> - Set up AWS Managed Microsoft AD to act as the on-premises DNS | 09/24/2026 | 09/24/2026 | [FCJ Lab10](https://000010.awsstudygroup.com/); [Launch CloudFormation](https://000010.awsstudygroup.com/2-prerequiste/2.2-launchcloudformation/), [Set up Managed AD](https://000010.awsstudygroup.com/4-setupad/) |
 | 6 | - **Lab 10 (part 2):** create an outbound endpoint, a forwarding rule for `onprem.example.com` and an inbound endpoint <br> - Tested DNS resolution, then cleaned up endpoints, rules, the directory and the stack | 09/25/2026 | 09/25/2026 | [Outbound queries](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-outbound-queries.html), [Inbound queries](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-inbound-queries.html); [FCJ Lab10 cleanup](https://000010.awsstudygroup.com/6-cleanup/) |
+| 7 | - Attended **Buildrathon Kickoff: Code the Future with CMC Global** at Bitexco Financial Tower <br> - Listened to the introduction of the Buildrathon program and a technical talk on the architecture of an AI-enabled Slack bot | 09/26/2026 | 09/26/2026 | [Event 1]({{< relref "/4-EventParticipated/4.1-Event1" >}}); [Event page](https://luma.com/8fe9vvps) |
 
 ### Week 2 Achievements:
 
 * Completed Module 02 theory, Lab 03 and Lab 10.
+* Attended the Buildrathon Kickoff (Event 1) and understood the purpose of the Buildrathon program.
 * Built a working VPC with public and private subnets across two AZs, Internet Gateway, NAT Gateway and Security Groups.
 * Managed a private EC2 instance without giving it a public IP.
 * Set up and tested Hybrid DNS with Route 53 Resolver inbound/outbound endpoints.
