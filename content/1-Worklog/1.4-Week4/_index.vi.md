@@ -30,4 +30,4 @@ pre: " <b> 1.4. </b> "
 * Triển khai website tĩnh trên S3 và phân phối qua CloudFront với bucket private.
 * Thực hành S3 Versioning, Cross-Region Replication và hiểu mỗi cơ chế bảo vệ trước rủi ro nào.
 * Dựng và kiểm tra trọn luồng backup → thông báo → restore với AWS Backup.
-* Hoàn tất giai đoạn nền tảng AWS (Module 01–04), sẵn sàng tham gia dự án nhóm.
+* Hoàn tất giai đoạn nền tảng AWS (Module 01-04), sẵn sàng tham gia dự án nhóm.

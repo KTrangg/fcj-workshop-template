@@ -30,4 +30,4 @@ pre: " <b> 1.4. </b> "
 * Deployed a static website on S3 and distributed it through CloudFront with a private bucket.
 * Practised S3 Versioning and Cross-Region Replication and know what each one protects against.
 * Built and tested a full backup → notification → restore flow with AWS Backup.
-* Finished the AWS foundations phase (Module 01–04) and am ready to join the team project.
+* Finished the AWS foundations phase (Module 01-04) and am ready to join the team project.

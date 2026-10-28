@@ -10,8 +10,8 @@ Worklog này ghi lại 12 tuần thực tập của tôi trong chương trình *
 
 Kỳ thực tập gồm hai giai đoạn:
 
-- **Tuần 1–4 — Nền tảng AWS:** học theo lộ trình FCJ (Module 01–04) kết hợp thực hành các lab về IAM, quản lý chi phí, mạng, compute, lưu trữ và sao lưu.
-- **Tuần 5–12 — Dự án nhóm:** cùng team xây dựng **FCAJ Hackathon System**, nâng cấp hệ thống SEAL Hackathon Management System lên AWS với một AI judge worker. Vai trò của tôi là **Frontend**: giao diện web, việc triển khai giao diện trên AWS và tích hợp với API của backend.
+- **Tuần 1 đến 4 (nền tảng AWS):** học theo lộ trình FCJ (Module 01-04) kết hợp thực hành các lab về IAM, quản lý chi phí, mạng, compute, lưu trữ và sao lưu.
+- **Tuần 5 đến 12 (dự án nhóm):** cùng team xây dựng **FCAJ Hackathon System**, nâng cấp hệ thống SEAL Hackathon Management System lên AWS với một AI judge worker. Vai trò của tôi là **Frontend**: giao diện web, việc triển khai giao diện trên AWS và tích hợp với API của backend.
 
 **Tuần 1:** [Làm quen chương trình, nền tảng cloud, IAM, AWS Budgets và AWS Support](1.1-week1/)
 

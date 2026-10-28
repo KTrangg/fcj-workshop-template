@@ -10,8 +10,8 @@ This worklog records my 12-week internship in the **First Cloud AI Journey (FCAJ
 
 The internship has two phases:
 
-- **Weeks 1–4 — AWS foundations:** following the FCJ learning path (Module 01–04) with hands-on labs on IAM, cost management, networking, compute, storage and backup.
-- **Weeks 5–12 — Team project:** building the **FCAJ Hackathon System** with my team, an upgrade of our SEAL Hackathon Management System to AWS with an AI judge worker. My role is **Frontend**: the web interface, its hosting on AWS and its integration with the backend APIs.
+- **Weeks 1 to 4 (AWS foundations):** following the FCJ learning path (Module 01-04) with hands-on labs on IAM, cost management, networking, compute, storage and backup.
+- **Weeks 5 to 12 (team project):** building the **FCAJ Hackathon System** with my team, an upgrade of our SEAL Hackathon Management System to AWS with an AI judge worker. My role is **Frontend**: the web interface, its hosting on AWS and its integration with the backend APIs.
 
 **Week 1:** [Onboarding, cloud fundamentals, IAM, AWS Budgets and AWS Support](1.1-week1/)
 

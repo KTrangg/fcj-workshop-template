@@ -8,7 +8,7 @@ pre: " <b> 1.6. </b> "
 
 ### Mục tiêu tuần 6:
 
-* Tham gia giai đoạn khảo sát và viết proposal của dự án (tuần 1 của dự án) ở vai trò Frontend.
+* Tham gia giai đoạn khảo sát và viết proposal của dự án ở vai trò Frontend.
 * Chọn cách host frontend trên AWS và hiểu các yêu cầu đi kèm (HTTPS, cache, routing của SPA, URL API).
 * Kiểm tra frontend vẫn build và chạy test được sau khi đổi tên SEAL → FCAJ.
 * Hiểu luồng chấm điểm bằng AI để giao diện hiển thị đúng từng trạng thái job.
@@ -30,6 +30,6 @@ pre: " <b> 1.6. </b> "
 * Hiểu URL API được đóng gói lúc build, nên pipeline CI phải build frontend với `VITE_API_URL` đúng cho từng môi trường.
 * Xác nhận frontend build và chạy test được sau khi PR #10 đổi tên được merge.
 * Hiểu luồng AI job qua SQS và liệt kê các trạng thái giao diện cùng dữ liệu API cần có.
-* Chuẩn bị đầu vào frontend cho proposal và ước tính chi phí, sẵn sàng cho task tuần 2 ở [Issue #12](https://github.com/nhatnhm1405/fcaj-hackathon-system/issues/12).
+* Chuẩn bị đầu vào frontend cho proposal và ước tính chi phí, sẵn sàng cho task frontend tiếp theo ở [Issue #12](https://github.com/nhatnhm1405/fcaj-hackathon-system/issues/12).
 
 <!-- [CẦN XÁC NHẬN: kiểm tra thứ 4 (bạn có chạy build/test trên máy không?) và thêm link ghi chú hoặc phần proposal của bạn, rồi xóa dòng này.] -->

@@ -8,7 +8,7 @@ pre: " <b> 1.6. </b> "
 
 ### Week 6 Objectives:
 
-* Follow the project's survey and proposal phase (project week 1) from the Frontend side.
+* Follow the project's survey and proposal phase from the Frontend side.
 * Choose a way to host the frontend on AWS and understand what it needs (HTTPS, caching, SPA routing, API URL).
 * Check that the frontend still builds and passes tests after the SEAL → FCAJ rename.
 * Understand the target AI judging flow so the UI can show each job state.
@@ -30,6 +30,6 @@ pre: " <b> 1.6. </b> "
 * Understood that the API URL is bundled at build time, so the CI pipeline must build the frontend with the correct `VITE_API_URL` for each environment.
 * Confirmed the frontend builds and passes its tests after the rename merged in PR #10.
 * Understood the AI job flow through SQS and listed the UI states and API data needed.
-* Prepared the frontend inputs for the proposal and the cost estimate, ready for the Week 2 task in [Issue #12](https://github.com/nhatnhm1405/fcaj-hackathon-system/issues/12).
+* Prepared the frontend inputs for the proposal and the cost estimate, ready for the next frontend task in [Issue #12](https://github.com/nhatnhm1405/fcaj-hackathon-system/issues/12).
 
 <!-- [TO CONFIRM: check day 4 (did you run build/test locally?) and add links to your notes or proposal section, then remove this line.] -->
